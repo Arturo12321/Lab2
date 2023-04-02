@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/ico" href="images/icon_page.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CRUD">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.rtl.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:600&display=swap" rel="stylesheet">
+</head>
+<body>
+</br>
+            <form onsubmit="event.preventDefault();onSubmit();" autocomplete="off">
+                <H1>Formulario</H1>
+              <br/>
+              <br/>
+              <div class="caja">
+                <div class="col-md-12">
+                <label class="form-label" for="nom">Nombre</label>
+                 <input type="text" id="nom" placeholder="Nombre" required>
+                </div>
+                  <div class="col-md-12">
+                <label class="form-label" for="ape">Apellido</label> 
+                <input type="text" id="ape" placeholder="Apellido" required>
+              </div>
+              <div ass="col-md-12">
+                <label class="form-label" for="pais">País</label>
+                <input type="text" id="pais" placeholder="Pais" required>
+              </div>
+              </div>
+              <br/>
+              <input class="submit" type="submit" value="OK">
+                <br>
+                <div class="tablita">
+                  <table class="tabla" id="tabla">
+                    <thead>
+                      <tr> 
+                        <th>Nombre</th> 
+                        <th>Apellido</th>
+                        <th>Pais</th>
+                      </tr>
+                    </thead>
+                      <tbody>
+        
+                      </tbody>
+                  </table>
+                </div>
+
+              </form>
+        <br/>
+        <br/>
+        </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/crud.js"></script>
+</html>
